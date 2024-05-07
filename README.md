@@ -21,13 +21,13 @@ MQTT_PASSWORD='kakaoVX_mqtt123!@#' <br/>
 | 모듈 동작 요청 |
 |request|내용|설명|
 |------|---|---|
-|topic|spacetalk/request| 토픽을 활용하여 메시지를 보내는 기능 구현|
+|topic|spacetalk/request| 토픽을 활용하여 디바이스의 ON OFF 메시지를 보내는 기능 구현|
 |message|{ "uuid":"000b9891-1e83-40a5-9a5b-2605129b77e6", "request":"on","devEui":"d02544fffefea317","data":{"channel":["3"]}}| 3번 채널의 모듈을 동작 on|
 
 |response|내용|설명|
 |------|---|---|
 |topic|spacetalk/response| 토픽을 활용하여 메시지를 받는 기능 구현|
-|message|{ "response": {"channel":"3", "moduleType":"airConditioner", powerState":"off","mode":"cool","temp":"23"}}| 모듈 상태 전달 |
+|message|{ "response": {"channel":"3", "moduleType":"airConditioner", powerState":"off","mode":"cool","temp":"23"}}| 모듈 상태값 받음 |
 
 
 
